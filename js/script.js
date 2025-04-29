@@ -54,6 +54,8 @@ function generateTitleLinks(){
 /* for each article */
  const articles = document.querySelectorAll(optArticleSelector);
 
+ let html = '';
+
  for(let article of articles) {
 
   /* get the article id */
@@ -69,8 +71,11 @@ function generateTitleLinks(){
   console.log('Printed title');
   /* insert link into titleList */
 
-  titleList.insertAdjacentHTML('beforeend', linkHTML);
+  html = html + linkHTML
+
+  console.log(html);
  }
+  titleList.innerHTML = html;
 }
 
 generateTitleLinks();
