@@ -161,7 +161,7 @@ generateTags();
   for(let matchingLink of matchingLinks){
 
     /* add class active */
-    clickedElement.classList.add('active');
+    matchingLink.classList.add('active');
   /* END LOOP: for each found tag link */
   }
   /* execute function "generateTitleLinks" with article selector as argument */
@@ -248,7 +248,7 @@ function authorClickHandler(event){
   for(let matchingLink of matchingLinks){
 
     /* add class active */
-    clickedElement.classList.add('active');
+    matchingLink.classList.add('active');
   /* END LOOP: for each found author link */
   }
   /* execute function "generateTitleLinks" with article selector as argument */
